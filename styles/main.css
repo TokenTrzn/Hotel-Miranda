@@ -1,18 +1,84 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
   width: 100%;
-  height: 8%;
-  color: #fff;
-  justify-content: space-evenly;
-  padding: 0.4rem;
+  display: block;
+  position: relative;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Archivo";
+}
+.header__menu {
+  display: inline-block;
+}
+.header__menu__icon, .header__menu__close-icon {
+  cursor: pointer;
+  padding-left: 1rem;
 }
 .header__logo {
-  background: #FFFFFF;
-  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+  display: inline-block;
+  padding: 1rem;
 }
+.header__logo__icon {
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0 0.8rem;
+  box-shadow: 0px 1rem 1.5rem 0px rgba(139, 139, 139, 0.1490196078);
+}
+.header__logo__icon__content {
+  font-size: 1.5rem;
+  color: #000000;
+  font-family: "Archivo";
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.header__logo__text {
+  display: inline-block;
+  padding-left: 1rem;
+  font-size: 1rem;
+  letter-spacing: 2.6px;
+  font-family: "Archivo";
+}
+.header__logo__text__up {
+  font-weight: 700;
+}
+.header__logo__text__down {
+  font-weight: 400;
+}
+.header__icons {
+  display: inline-block;
+}
+.header__nav {
+  box-shadow: 0px -6px 8px rgba(0, 0, 0, 0.2901960784);
+  position: relative;
+  z-index: 10;
+}
+.header__nav__nav.show {
+  display: block;
+}
+.header__nav__list {
+  background: #ffffff;
+  width: 100%;
+  list-style: none;
+}
+.header__nav__list__item {
+  padding: 0.8rem 1rem;
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.header__nav__list__item a {
+  text-decoration: none;
+  color: #111111;
+}
+.header__nav__list #first {
+  padding-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .footer {
   width: 100%;
   display: block;
