@@ -1,0 +1,191 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 8%;
+  color: #fff;
+  justify-content: space-evenly;
+  padding: 0.4rem;
+}
+.header__logo {
+  background: #FFFFFF;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+}
+.footer {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.footer__background {
+  opacity: 2%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.footer__title {
+  display: inline-block;
+  padding: 1rem;
+}
+.footer__title__icon {
+  display: inline-block;
+  text-align: center;
+  background-color: #BEAD8E;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 1rem 1.5rem 0px rgba(139, 139, 139, 0.1490196078);
+}
+.footer__title__icon__content {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Archivo";
+  font-weight: 700;
+  line-height: 2.7rem;
+  padding: 0.4rem;
+}
+.footer__title__text {
+  display: inline-block;
+  padding-left: 2rem;
+  font-size: 1.625rem;
+  letter-spacing: 2.6px;
+  font-family: "Archivo";
+  line-height: 1.75rem;
+}
+.footer__title__text__up {
+  font-weight: 700;
+}
+.footer__title__text__down {
+  font-weight: 400;
+}
+.footer__text {
+  padding: 2rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #777777;
+  font-family: "Archivo";
+}
+.footer__social {
+  display: block;
+  padding-left: 1.2rem;
+}
+.footer__social__item {
+  display: inline-block;
+  background: #f8f8f8;
+  padding: 0.4rem;
+  margin-right: 0.6rem;
+}
+.footer__services__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 1.5rem 1rem;
+}
+.footer__services__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+  list-style: none;
+  padding: 0 1rem;
+}
+.footer__services__list__item {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #777777;
+}
+.footer__services__list__item:nth-child(-n+6) {
+  grid-column: 1;
+}
+.footer__services__list__item:nth-child(7) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.footer__services__list__item:nth-child(8) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.footer__services__list__item:nth-child(9) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.footer__services__list__item:nth-child(10) {
+  grid-column: 2;
+  grid-row: 4;
+}
+.footer__contact-us {
+  padding-top: 1.5rem;
+}
+.footer__contact-us__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #222222;
+  padding: 1rem 1rem;
+  padding-bottom: 2.5rem;
+}
+.footer__contact-us__row {
+  display: inline-block;
+  padding-bottom: 2.75rem;
+}
+.footer__contact-us__row__icon {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.footer__contact-us__row__info {
+  display: inline-block;
+  padding-left: 1rem;
+}
+.footer__contact-us__row__info__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.footer__contact-us__row__info__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #777777;
+}
+.footer__copyright {
+  display: block;
+  text-align: start;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+  background-color: #f8f8f8;
+}
+.footer__copyright__info {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  letter-spacing: -0.5px;
+}
+.footer__copyright__info__separator {
+  padding: 0 1.4rem;
+}
+.footer__copyright #text-up {
+  padding-bottom: 1rem;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/*# sourceMappingURL=main.css.map */
