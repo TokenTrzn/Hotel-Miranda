@@ -1,0 +1,6 @@
+@mixin defaultButton($backgroundColor, $padding, $fontFamily, $fontSize) {
+    background: $backgroundColor;
+    padding: $padding;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}

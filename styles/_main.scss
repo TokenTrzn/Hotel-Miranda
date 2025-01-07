@@ -1,5 +1,8 @@
 @use './header';
 @use './footer';
+@use './rooms';
+@use './roomDetails';
+@use './mixin';
  
 *,
 html {
