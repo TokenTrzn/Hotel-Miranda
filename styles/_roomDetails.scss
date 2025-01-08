@@ -307,6 +307,7 @@
 
 .relatedRooms {
     width: 100%;
+    margin-bottom: 5rem;
 
     &__title {
         width: 100%;
@@ -350,6 +351,9 @@
             font-weight: 400;
             font-size: .875rem;
             line-height: 1.5rem;
+            color: #777777;
+            margin-top: 1rem;
+            padding: 0 2rem;
         }
 
         &__price {
