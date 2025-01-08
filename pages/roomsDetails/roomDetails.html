@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../../styles/main.css" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="../../scripts/menu.js" defer></script>
+    <script src="../../scripts/slider.js" defer></script>
 </head>
 
 <body>
@@ -173,14 +172,38 @@
         <section class="relatedRooms">
             <p class="relatedRooms__title">Related Rooms</p>
             <div class="relatedRooms__separator"></div>
-            <div class="relatedRooms__slider">
-                <img src="../../assets/habitacion1.jpg" class="relatedRooms__slider__img" />
-            </div>
-            <div class="relatedRooms__info">
-                <p class="relatedRooms__info__title">Minimal Duplex Room</p>
-                <p class="relatedRooms__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit,
-                    sed do eiusmod tempor.</p>
-                <p class="relatedRooms__info__price">$345/Night <span>Booking Now</span></p>
+            <div class="swiper relatedRooms__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <div class="relatedRooms__swiper__info">
+                            <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 

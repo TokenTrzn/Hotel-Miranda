@@ -138,7 +138,7 @@
             border: none;
             border-radius: 0;
             background: #BEAD8E;
-            padding: .8rem 0;
+            padding: 1.2rem 0;
             color: #FFFFFF;
             font-family: 'Archivo';
             font-weight: 400;
@@ -308,6 +308,7 @@
 .relatedRooms {
     width: 100%;
     margin-bottom: 5rem;
+    padding: 3rem 1rem;
 
     &__title {
         width: 100%;
@@ -323,7 +324,7 @@
         color: #F1F1F1;
         background-color: #F1F1F1;
         height: 1px;
-        margin: 1rem 1rem 3.5rem 1rem
+        margin: 1rem 1rem 2rem 1rem
     }
 
     &__slider {
@@ -368,5 +369,53 @@
             }
         }
     }
+
+    &__swiper {
+        position: relative;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__icons {
+            position: absolute;
+            bottom: 35%;
+            right: 10%;
+        }
+
+        &__info {
+            background-color: #ffffff;
+            padding-top: 3rem;
+            text-align: center;
+
+            &__title {
+                @include menu-subtitle
+            }
+
+            &__description {
+                @include info-description
+            }
+
+            &__price {
+                font-family: 'Archivo';
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                color: #BEAD8E;
+                padding-bottom: 2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: #BDBDBD;
+                }
+            }
+        }
+    }
 }
+
+
 

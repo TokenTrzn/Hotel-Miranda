@@ -173,13 +173,15 @@
         &__info {
             background-color: #ffffff;
             padding-top: 3rem;
+            text-align: center;
 
             &__title {
                 @include menu-subtitle
             }
 
             &__description {
-                @include info-description
+                @include info-description;
+                padding: 1rem;
             }
 
             &__price {

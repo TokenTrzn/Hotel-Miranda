@@ -5,3 +5,12 @@ const offersSwiper = new Swiper('.popularList__swiper', {
         prevEl: '.swiper-button-prev'
     }
 })
+
+const relatedRoomsSwiper = new Swiper('.relatedRooms__swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
+})
+
