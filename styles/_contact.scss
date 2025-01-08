@@ -1,0 +1,110 @@
+@import "./mixin.scss";
+
+.contact {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60%;
+        margin-top: 50px;
+
+        &__item {
+            position: relative;
+            left: 20%;
+            z-index: 1;
+
+            &__img {
+                position: relative;
+                left: 80%;
+                z-index: 1;
+            }
+
+            &__icon {
+                position: relative;
+                bottom: 145px;
+                z-index: 2;
+            }
+
+            &__text {
+                position: relative;
+                bottom: 185px;
+                left: 65px;
+                z-index: 2;
+
+                &__title {
+                    @include title-contact;
+                    margin-bottom: 15px;
+                }
+
+                &__info {
+                    @include text-contact;
+                    color: #777777;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.form {
+    padding: 1rem;
+    margin: 2rem 0;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__group {
+        position: relative;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 10px;
+        pointer-events: none;
+    }
+
+    &__icon--message {
+        top: 18%;
+        position: absolute;
+        left: 10px;
+    }
+
+    &__input {
+        color: #777;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        height: 65px;
+        padding: 10px 10px 10px 40px;
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__button {
+        width: 75%;
+        padding: 1.5rem 0;
+        border: none;
+        margin-top: 6rem;
+        background: #BEAD8E;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        letter-spacing: 3.2px;
+        color: #ffffff;
+    }
+}
