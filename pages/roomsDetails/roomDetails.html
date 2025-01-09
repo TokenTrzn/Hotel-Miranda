@@ -66,13 +66,13 @@
             <p class="checkAvailability__title">Check Availability</p>
             <form class="checkAvailability__form">
                 <div class="checkAvailability__form__checkIn">
-                    <p class="checkAvailability__form__checkIn__title">Check In</p>
-                    <input class="checkAvailability__form__checkIn__input" type="date" placeholder="07/01/2025"
+                    <label class="checkAvailability__form__checkIn__title" for="chekIn">Check In</label>
+                    <input class="checkAvailability__form__checkIn__input" id="checkIn" type="date" placeholder="07/01/2025"
                         pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
                 <div class="checkAvailability__form__checkOut">
-                    <p class="checkAvailability__form__checkOut__title">Check Out</p>
-                    <input class="checkAvailability__form__checkOut__input" type="date" placeholder="09/01/2025"
+                    <label class="checkAvailability__form__checkOut__title" for="checkOut">Check Out</label>
+                    <input class="checkAvailability__form__checkOut__input" id="checkOut" type="date" placeholder="09/01/2025"
                         pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
                 <button class="checkAvailability__form__button" type="submit">CHECK AVAILABILITY</button>
@@ -153,6 +153,7 @@
             </div>
             <div class="amenities__person">
                 <div class="amenities__person__photo">
+                    <img />
                     <div class="amenities__person__photo__tick">
                         <img src="../../assets/ok_icon.png" class="amenities__person__photo__tick__icon" />
                     </div>

@@ -253,26 +253,22 @@
 }
 .ultimate__title {
   font-family: "Archivo";
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: left;
-  vertical-align: top;
+  font-weight: 700;
+  font-size: 0.825rem;
+  line-height: 1.125rem;
   letter-spacing: 2.8px;
-  margin-bottom: 26px;
+  margin-bottom: 1.5rem;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
 .ultimate__description {
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
-  line-height: 60px;
-  text-align: left;
-  vertical-align: top;
+  line-height: 3.75rem;
   letter-spacing: -1.2px;
   color: #FFFFFF;
-  margin-bottom: 2.9rem;
+  margin-bottom: 3rem;
 }
 .ultimate__nav {
   display: flex;
@@ -286,19 +282,15 @@
   display: flex;
   flex-direction: row;
 }
-.ultimate__nav__links a:nth-child(1) {
-  font-family: "Archivo";
-  font-size: 16px;
-  font-weight: bold;
-  color: #222222;
-  text-decoration: none;
+.ultimate__nav__links a:nth-child(2) {
+  color: #BEAD8E;
 }
+.ultimate__nav__links a:nth-child(1),
 .ultimate__nav__links a:nth-child(2) {
   font-family: "Archivo";
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
   color: #222222;
-  color: #BEAD8E;
   text-decoration: none;
 }
 
@@ -317,18 +309,17 @@
   z-index: 9;
 }
 .rooms__title {
-  font-family: "Old Standard TT", serif;
+  font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  vertical-align: top;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: -0.72px;
   color: #222222;
   text-align: center;
   margin-top: -1.5rem;
 }
 .rooms__description {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -350,25 +341,18 @@
   color: #777777;
 }
 .rooms__info p:nth-child(1) {
-  font-family: "Archivo", sans-serif;
-  font-style: bold;
-  font-size: 1rem;
-  line-height: 43px;
-  text-align: center;
-  vertical-align: top;
-  font-weight: bold;
   color: #BEAD8E;
 }
 .rooms__info p:nth-child(2) {
-  font-family: "Archivo", sans-serif;
-  font-style: bold;
+  color: #BDBDBD;
+  margin-bottom: 3rem;
+}
+.rooms__info p:nth-child(1),
+.rooms__info p:nth-child(2) {
+  font-family: "Archivo";
+  font-weight: 700;
   font-size: 1rem;
   line-height: 43px;
-  text-align: center;
-  vertical-align: top;
-  color: #BDBDBD;
-  font-weight: bold;
-  margin-bottom: 3.2rem;
 }
 
 .ultimate {
@@ -473,21 +457,8 @@
   border: none;
   border-radius: 0;
   background: #F8F8F8;
-  padding: 1rem 1.2rem;
-}
-.checkAvailability__form__checkIn__input::-moz-placeholder, .checkAvailability__form__checkOut__input::-moz-placeholder {
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #777777;
-}
-.checkAvailability__form__checkIn__input::placeholder, .checkAvailability__form__checkOut__input::placeholder {
-  font-family: "Archivo";
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #777777;
+  padding: 1.2rem;
+  margin: 1rem 0;
 }
 .checkAvailability__form__button {
   width: 100%;
@@ -528,7 +499,7 @@
   color: #F1F1F1;
   background-color: #F1F1F1;
   height: 1px;
-  margin: 1rem 1rem 3.5rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
 }
 .amenities__container {
   display: grid;
@@ -715,16 +686,15 @@
   text-align: center;
 }
 .relatedRooms__swiper__info__title {
-  font-family: "Old Standard TT", serif;
+  font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  vertical-align: top;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: -0.72px;
   color: #222222;
 }
 .relatedRooms__swiper__info__description {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -772,23 +742,20 @@
   font-weight: 700;
   font-size: 1.425rem;
   line-height: 1.5rem;
-  text-decoration: line-through;
   color: #BEAD8E;
   margin-bottom: 0.6rem;
+  text-decoration: line-through;
 }
 .offers__article__photo__prices__new {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2rem;
-  text-decoration: line-through;
   color: #DE5777;
 }
 .offers__article__photo__prices__old span, .offers__article__photo__prices__new span {
   font-size: 0.6875rem;
   line-height: 0.75rem;
-  text-decoration: none;
-  text-decoration: line-through;
 }
 .offers__article__bedType {
   font-family: "Archivo";
@@ -845,17 +812,18 @@
   color: #777777;
 }
 .offers__article__button {
-  width: 55%;
+  width: 75%;
   border: none;
   border-radius: 0;
   background: #BEAD8E;
-  padding: 1.4rem 0;
+  padding: 1.4rem 2rem;
   color: #FFFFFF;
   font-family: "Archivo";
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: 2.8px;
-  margin: 0 2.5rem;
+  margin: 1rem 0;
+  margin-left: 1rem;
 }
 
 .popularList {
@@ -897,16 +865,15 @@
   text-align: center;
 }
 .popularList__swiper__info__title {
-  font-family: "Old Standard TT", serif;
+  font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  vertical-align: top;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: -0.72px;
   color: #222222;
 }
 .popularList__swiper__info__description {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1106,6 +1073,7 @@
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: 2.8px;
+  margin: 1rem 0;
   margin-bottom: 2.5rem;
 }
 
@@ -1232,24 +1200,20 @@
 }
 .ultimate__title {
   font-family: "Archivo";
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: left;
-  vertical-align: top;
+  font-weight: 700;
+  font-size: 0.825rem;
+  line-height: 1.125rem;
   letter-spacing: 2.8px;
-  margin-bottom: 26px;
+  margin-bottom: 1.5rem;
   color: #FFFFFF;
   margin-bottom: 2.5rem;
   margin-right: 1rem;
 }
 .ultimate__description {
   font-family: "Old Standard TT", serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
-  line-height: 60px;
-  text-align: left;
-  vertical-align: top;
+  line-height: 3.75rem;
   letter-spacing: -1.2px;
   color: #FFFFFF;
   margin-bottom: 2rem;
@@ -1280,10 +1244,10 @@
   margin-bottom: 2rem;
 }
 .availability__items__label {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.175rem;
   color: #FFFFFF;
   margin-bottom: 1rem;
 }
@@ -1461,16 +1425,15 @@
   text-align: center;
 }
 .homeRooms__swiper__info__title {
-  font-family: "Old Standard TT", serif;
+  font-family: "Old Standard TT";
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  vertical-align: top;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: -0.72px;
   color: #222222;
 }
 .homeRooms__swiper__info__description {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1547,6 +1510,7 @@
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: 2.8px;
+  margin: 1rem 0;
   margin-bottom: 2rem;
 }
 

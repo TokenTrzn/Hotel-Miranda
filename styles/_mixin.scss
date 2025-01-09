@@ -1,103 +1,50 @@
-@mixin defaultButton($backgroundColor, $padding, $fontFamily, $fontSize) {
-    background: $backgroundColor;
-    padding: $padding;
-    font-family: $fontFamily;
-    font-size: $fontSize;
-}
-
-@mixin nav-items {
-    font-family: "Archivo";
-    font-size: 16px;
-    font-weight: bold;
-    color: #222222
-}
-
-@mixin ultimateluxury-text {
+@mixin defaultButton {
+    width: 75%;
+    border: none;
+    border-radius: 0;
+    background: #BEAD8E;
+    padding: 1.4rem 2rem;
+    color: #FFFFFF;
     font-family: 'Archivo';
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: left;
-    vertical-align: top;
+    font-weight: 400;
+    font-size: .875rem;
     letter-spacing: 2.8px;
-    margin-bottom: 26px;
+    margin: 1rem 0;
+}
+
+@mixin ultimateTitle {
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: .825rem;
+    line-height: 1.125rem;
+    letter-spacing: 2.8px;
+    margin-bottom: 1.5rem;
     color: #FFFFFF;
 }
 
-@mixin ultimateroom-text {
+@mixin ultimateDescription {
     font-family: "Old Standard TT", serif;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 400;
-    line-height: 60px;
-    text-align: left;
-    vertical-align: top;
+    line-height: 3.75rem;
     letter-spacing: -1.2px;
     color: #FFFFFF;
 }
 
-@mixin menu-subtitle {
-    font-family: "Old Standard TT", serif;
+@mixin roomTitle {
+    font-family: "Old Standard TT";
     font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    vertical-align: top;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     letter-spacing: -0.72px;
     color: #222222;
 }
 
-@mixin info-description {
-    font-family: "Roboto", sans-serif;
+@mixin roomDescription {
+    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     vertical-align: top;
     color: #777777;
-}
-
-@mixin price($font-size) {
-    font-family: "Archivo", sans-serif;
-    font-style: bold;
-    font-size: ($font-size);
-    line-height: 43px;
-    text-align: center;
-    vertical-align: top;
-}
-
-@mixin text-contact {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-@mixin title-contact {
-    font-family: 'Old Standard TT', serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #222222;
-}
-
-@mixin text-label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-}
-
-@mixin section-title {
-    font-family: "Old Standard TT", serif;
-    font-size: 32px;
-    line-height: 30px;
-    vertical-align: top;
-    letter-spacing: -0.9px;
-    font-weight: 400;
-}
-
-@mixin section-description {
-    font-family: 'Roboto';
-    font-size: 15px;
-    line-height: 22px;
-    vertical-align: top;
 }

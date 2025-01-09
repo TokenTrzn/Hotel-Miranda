@@ -116,15 +116,8 @@
                 border: none;
                 border-radius: 0;
                 background: #F8F8F8;
-                padding: 1rem 1.2rem;
-            }
-
-            &__input::placeholder {
-                font-family: 'Archivo';
-                font-weight: 400;
-                font-size: .875rem;
-                line-height: 1rem;
-                color: #777777;
+                padding: 1.2rem;
+                margin: 1rem 0;
             }
 
         }
@@ -172,7 +165,7 @@
         color: #F1F1F1;
         background-color: #F1F1F1;
         height: 1px;
-        margin: 1rem 1rem 3.5rem 1rem
+        margin: 1rem 1rem 2rem 1rem
     }
 
     &__container {
@@ -325,6 +318,7 @@
 
     &__slider {
         width: 100%;
+
         &__img {
             width: 100%;
             padding: 1rem;
@@ -385,11 +379,11 @@
             text-align: center;
 
             &__title {
-                @include menu-subtitle
+                @include roomTitle
             }
 
             &__description {
-                @include info-description
+                @include roomDescription
             }
 
             &__price {
@@ -412,6 +406,3 @@
         }
     }
 }
-
-
-

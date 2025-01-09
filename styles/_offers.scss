@@ -27,9 +27,9 @@
                     font-weight: 700;
                     font-size: 1.425rem;
                     line-height: 1.5rem;
-                    text-decoration: line-through;
                     color: #BEAD8E;
                     margin-bottom: .6rem;
+                    text-decoration: line-through;
                 }
 
                 &__new {
@@ -37,7 +37,6 @@
                     font-weight: 700;
                     font-size: 1.875rem;
                     line-height: 2rem;
-                    text-decoration: line-through;
                     color: #DE5777;
                 }
 
@@ -46,8 +45,6 @@
                     span {
                         font-size: .6875rem;
                         line-height: .75rem;
-                        text-decoration: none;
-                        text-decoration: line-through;
                     }
                 }
             }
@@ -115,17 +112,8 @@
         }
 
         &__button {
-            width: 55%;
-            border: none;
-            border-radius: 0;
-            background: #BEAD8E;
-            padding: 1.4rem 0;
-            color: #FFFFFF;
-            font-family: 'Archivo';
-            font-weight: 400;
-            font-size: .875rem;
-            letter-spacing: 2.8px;
-            margin: 0 2.5rem;
+            @include defaultButton;
+            margin-left: 1rem;
         }
     }
 }
@@ -176,11 +164,11 @@
             text-align: center;
 
             &__title {
-                @include menu-subtitle
+                @include roomTitle
             }
 
             &__description {
-                @include info-description;
+                @include roomDescription;
                 padding: 1rem;
             }
 

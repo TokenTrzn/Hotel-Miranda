@@ -5,13 +5,13 @@
   padding: 4.6rem 1.2rem 0;
 
   &__title {
-    @include ultimateluxury-text;
+    @include ultimateTitle;
     margin-bottom: 1rem;
   }
 
   &__description {
-    @include ultimateroom-text;
-    margin-bottom: 2.9rem;
+    @include ultimateDescription;
+    margin-bottom: 3rem;
   }
 
   &__nav {
@@ -26,14 +26,16 @@
       display: flex;
       flex-direction: row;
 
-      a:nth-child(1) {
-        @include nav-items;
-        text-decoration: none;
+      a:nth-child(2) {
+        color: #BEAD8E;
       }
 
+      a:nth-child(1),
       a:nth-child(2) {
-        @include nav-items;
-        color: #BEAD8E;
+        font-family: "Archivo";
+        font-size: 1rem;
+        font-weight: 700;
+        color: #222222;
         text-decoration: none;
       }
     }
@@ -60,13 +62,13 @@
   }
 
   &__title {
-    @include menu-subtitle;
+    @include roomTitle;
     text-align: center;
     margin-top: -1.5rem;
   }
 
   &__description {
-    @include info-description;
+    @include roomDescription;
     text-align: center;
     padding: 0 1.3rem;
     margin-top: 1rem;
@@ -85,16 +87,20 @@
     }
 
     p:nth-child(1) {
-      @include price(1rem);
-      font-weight: bold;
       color: #BEAD8E;
     }
 
     p:nth-child(2) {
-      @include price(1rem);
       color: #BDBDBD;
-      font-weight: bold;
-      margin-bottom: 3.2rem;
+      margin-bottom: 3rem;
+    }
+
+    p:nth-child(1),
+    p:nth-child(2) {
+      font-family: "Archivo";
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 43px;
     }
   }
 }

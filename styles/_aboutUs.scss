@@ -79,16 +79,7 @@
     }
 
     &__button {
-        width: 75%;
-        border: none;
-        border-radius: 0;
-        background: #BEAD8E;
-        padding: 1.4rem 2rem;
-        color: #FFFFFF;
-        font-family: 'Archivo';
-        font-weight: 400;
-        font-size: .875rem;
-        letter-spacing: 2.8px;
+        @include defaultButton;
         margin-bottom: 2.5rem;
     }
 }
