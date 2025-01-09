@@ -49,6 +49,7 @@
 }
 .header__icons {
   display: inline-block;
+  padding-left: 4rem;
 }
 .header__nav {
   box-shadow: 0px -6px 8px rgba(0, 0, 0, 0.2901960784);
@@ -930,48 +931,44 @@
   color: #BDBDBD;
 }
 
-.contact__container {
+.contact__item {
   display: flex;
-  flex-direction: column;
-  margin-right: 60%;
-  margin-top: 50px;
-}
-.contact__container__item {
-  padding-left: 1.4rem;
-}
-.contact__container__item__img {
+  padding: 6rem 2rem;
   position: relative;
-  left: 80%;
 }
-.contact__container__item__icon {
-  position: relative;
-  bottom: 145px;
-  z-index: 2;
+.contact__item__background {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12.5rem;
+  letter-spacing: -6px;
+  color: #f8f8f8;
+  z-index: -1;
 }
-.contact__container__item__text {
-  position: relative;
-  bottom: 185px;
-  left: 65px;
-  z-index: 2;
+.contact__item__icon {
+  height: 2rem;
+  width: auto;
 }
-.contact__container__item__text__title {
-  font-family: "Old Standard TT", serif;
-  font-size: 20px;
+.contact__item__title {
+  font-family: "Old Standard TT";
   font-weight: 400;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #222222;
-  margin-bottom: 15px;
+  padding-left: 1.5rem;
 }
-.contact__container__item__text__info {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.contact__item__title span {
+  display: block;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #777777;
-  width: 200px;
 }
 .contact__image {
   width: 100%;
+  margin-top: 3rem;
   padding: 1rem;
 }
 

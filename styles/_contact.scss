@@ -2,48 +2,50 @@
 
 .contact {
 
-    &__container {
+    &__item {
         display: flex;
-        flex-direction: column;
-        margin-right: 60%;
-        margin-top: 50px;
+        padding: 6rem 2rem;
+        position: relative;
 
-        &__item {
-            padding-left: 1.4rem;
+        &__background {
+            position: absolute;
+            right: 0;
+            top: 15%;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 12.5rem;
+            letter-spacing: -6px;
+            color: #f8f8f8;
+            z-index: -1;
+        }
 
-            &__img {
-                position: relative;
-                left: 80%;
-            }
+        &__icon {
+            height: 2rem;
+            width: auto;
+        }
 
-            &__icon {
-                position: relative;
-                bottom: 145px;
-                z-index: 2;
-            }
-
-            &__text {
-                position: relative;
-                bottom: 185px;
-                left: 65px;
-                z-index: 2;
-
-                &__title {
-                    @include title-contact;
-                    margin-bottom: 15px;
-                }
-
-                &__info {
-                    @include text-contact;
-                    color: #777777;
-                    width: 200px;
-                }
+        &__title {
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            color: #222222;
+            padding-left: 1.5rem;
+        
+            span {
+                display: block;
+                font-family: 'Roboto';
+                font-size: .875rem;
+                line-height: 1rem;
+                color: #777777;
             }
         }
+
     }
 
     &__image {
         width: 100%;
+        margin-top: 3rem;
         padding: 1rem;
     }
 }
