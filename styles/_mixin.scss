@@ -77,3 +77,27 @@
     line-height: 24px;
     color: #222222;
 }
+
+@mixin text-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+@mixin section-title {
+    font-family: "Old Standard TT", serif;
+    font-size: 32px;
+    line-height: 30px;
+    vertical-align: top;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+}
+
+@mixin section-description {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: top;
+}
