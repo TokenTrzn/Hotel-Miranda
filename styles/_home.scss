@@ -396,7 +396,8 @@
 
 .banner {
     position: relative;
-    height: 8rem;
+    height: 9rem;
+    overflow: hidden;
 
     &__icon {
         position: absolute;
