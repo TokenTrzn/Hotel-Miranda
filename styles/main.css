@@ -1036,6 +1036,207 @@
   color: #ffffff;
 }
 
+.aboutUs {
+  text-align: center;
+}
+.aboutUs__video {
+  width: 100%;
+  padding: 0 1rem;
+  padding-top: 4rem;
+}
+.aboutUs__title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -1.16px;
+  color: #222222;
+  padding: 2rem 1rem;
+}
+.aboutUs__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.aboutUs__icons__background {
+  padding: 2rem 0;
+}
+.aboutUs__icons__background__item {
+  width: auto;
+  height: 3.3rem;
+}
+.aboutUs__icons__background__text {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2.4px;
+  color: #222222;
+}
+
+.restaurant {
+  padding: 2.5rem;
+}
+.restaurant__img {
+  width: 100%;
+}
+.restaurant__text {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 2.8px;
+  color: #777777;
+  padding: 1.5rem 0;
+}
+.restaurant__title {
+  font-family: "Old Standard TT";
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+  letter-spacing: -1.5px;
+  color: #222222;
+  padding-bottom: 2rem;
+}
+.restaurant__description {
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #777777;
+  padding-bottom: 1rem;
+}
+.restaurant__button {
+  width: 75%;
+  border: none;
+  border-radius: 0;
+  background: #BEAD8E;
+  padding: 1.4rem 2rem;
+  color: #FFFFFF;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 2.8px;
+  margin-bottom: 2.5rem;
+}
+
+.facilities {
+  background: #222222;
+  padding: 1rem;
+  text-align: center;
+}
+.facilities__title {
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 2.8px;
+  color: #ffffff;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.facilities__subtitle {
+  font-family: "Old Standard TT";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #ffffff;
+}
+.facilities__swiper {
+  padding: 1rem;
+  text-align: start;
+}
+.facilities__swiper__slide {
+  position: relative;
+  background: #292929;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.facilities__swiper__slide__background {
+  position: absolute;
+  color: #222222;
+  font-family: Archivo;
+  font-size: 7.5rem;
+  font-weight: 700;
+  line-height: 8.125rem;
+  right: 5%;
+  top: 0;
+}
+.facilities__swiper__slide__icon {
+  padding: 3rem 1rem;
+}
+.facilities__swiper__slide__title {
+  font-family: "Old Standard TT";
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  color: #ffffff;
+  padding-bottom: 2rem;
+}
+.facilities__swiper__slide__text {
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #ffffff;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+}
+
+.counter {
+  padding: 3rem 1rem;
+}
+.counter__title {
+  font-family: "Archivo";
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 2.8px;
+  color: #777777;
+  padding-bottom: 1.5rem;
+}
+.counter__subtitle {
+  font-family: "Old Standard TT";
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #222222;
+  padding-bottom: 2rem;
+}
+.counter__facts__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.counter__facts__item__text {
+  margin-right: 2rem;
+  font-family: "Old Standard TT";
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -1.8px;
+}
+.counter__facts__item__text span {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+  line-height: 1rem;
+}
+.counter__facts__item__icon {
+  padding-right: 1rem;
+}
+.counter__swiper__slide {
+  padding: 2rem 1rem;
+}
+.counter__swiper__slide__img {
+  width: 100%;
+}
+
 *,
 html {
   box-sizing: border-box;
@@ -1055,6 +1256,11 @@ body {
   margin-bottom: 12rem;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #bead8e !important;
+}
+
 :root {
   --swiper-navigation-size: .5rem !important;
+  --swiper-pagination-bullet-inactive-color: #333333 ;
 }/*# sourceMappingURL=main.css.map */
