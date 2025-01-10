@@ -1,6 +1,6 @@
 @import './mixin';
 
-.ultimate {
+.ultimateHome {
     background-color: #333333;
     padding: 4.6rem 1.2rem 0;
 
@@ -13,6 +13,19 @@
     &__description {
         @include ultimateDescription;
         margin-bottom: 2rem;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 7.5rem;
+            line-height: 8.125rem;
+            letter-spacing: -3.6px;
+        }
+    }
+
+    &__media {
+        @media only screen and (min-width:1000px) {
+            display: flex;   
+            width: 53%;
+        }
     }
 
     &__button {
@@ -27,11 +40,20 @@
         font-size: .875rem;
         letter-spacing: 2.8px;
         margin-bottom: 2rem;
+
     }
 
     #learnButton {
         background: transparent;
         border: 2px solid rgba(255, 255, 255, .3);
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: 2rem;   
+        }
+    }
+
+    @media only screen and (min-width:1000px) {
+        padding: 6rem 4rem;
     }
 }
 
@@ -70,6 +92,10 @@
             height: 1rem;
             margin-right: 0.5rem;
         }
+
+        @media only screen and (min-width: 1000px) {
+                margin-top: 3%;
+        }
     }
 
     &__button {
@@ -84,6 +110,17 @@
         font-size: .875rem;
         letter-spacing: 2.8px;
         margin: 1rem 0;
+
+        @media only screen and (min-width: 1000px) {
+            width: 30%; 
+            margin-left: 17%;  
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        display: flex;
+        align-items: center;            
+        padding: 2rem 4rem;   
     }
 }
 

@@ -1,46 +1,4 @@
-@import './mixin.scss';
-
-.ultimate {
-  background-color: #333333;
-  padding: 4.6rem 1.2rem 0;
-
-  &__title {
-    @include ultimateTitle;
-    margin-bottom: 1rem;
-  }
-
-  &__description {
-    @include ultimateDescription;
-    margin-bottom: 3rem;
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-    &__links {
-      background-color: #FFFFFF;
-      overflow: visible;
-      padding: 1rem 1.5rem;
-      display: flex;
-      flex-direction: row;
-
-      a:nth-child(2) {
-        color: #BEAD8E;
-      }
-
-      a:nth-child(1),
-      a:nth-child(2) {
-        font-family: "Archivo";
-        font-size: 1rem;
-        font-weight: 700;
-        color: #222222;
-        text-decoration: none;
-      }
-    }
-  }
-}
+@import './mixin';
 
 .rooms {
   padding: 3rem 1.2rem 0;

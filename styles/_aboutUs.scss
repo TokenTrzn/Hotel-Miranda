@@ -1,10 +1,61 @@
+@import './mixin.scss';
+
+.ultimate {
+    background-color: #333333;
+    padding: 4.6rem 1.2rem 0;
+
+    &__title {
+        @include ultimateTitle;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        @include ultimateDescription;
+        margin-bottom: 3rem;
+
+        @media only screen and (min-width: 1000px)  {
+            margin-bottom: 0;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        &__links {
+            background-color: #FFFFFF;
+            overflow: visible;
+            padding: 1rem 1.5rem;
+            display: flex;
+            flex-direction: row;
+
+            &__text {
+                font-family: "Archivo";
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                color: #bead8e;
+
+                a {
+                    color: #222222;
+                    text-decoration: none;
+                }
+            }          
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        padding: 4rem 20% 0;
+    }
+}
+
 .aboutUs {
     text-align: center;
 
     &__video {
         width: 100%;
-        padding: 0 1rem;
-        padding-top: 4rem;
+        height: auto;
     }
 
     &__title {
@@ -15,6 +66,13 @@
         letter-spacing: -1.16px;
         color: #222222;
         padding: 2rem 1rem;
+
+        @media only screen and (min-width: 1000px) {
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -2.16px;
+            padding: 2rem 0;
+        }
     }
 
     &__icons {
@@ -39,6 +97,10 @@
                 color: #222222;
             }
         }
+    }
+
+    @media screen {
+        padding: 4rem 20% 0;
     }
 }
 
@@ -165,9 +227,9 @@
         font-size: .875rem;
         font-weight: 700;
         line-height: 1rem;
-        letter-spacing: 2.8px;    
-        color: #777777;   
-        padding-bottom: 1.5rem; 
+        letter-spacing: 2.8px;
+        color: #777777;
+        padding-bottom: 1.5rem;
     }
 
     &__subtitle {
@@ -188,8 +250,7 @@
             gap: 1rem;
             padding: 2rem 1rem;
 
-            &__img {
-            }
+            &__img {}
 
             &__text {
                 margin-right: 2rem;
@@ -197,12 +258,12 @@
                 font-size: 3.75rem;
                 font-weight: 400;
                 line-height: 2rem;
-                letter-spacing: -1.8px;               
+                letter-spacing: -1.8px;
 
                 span {
                     font-family: 'Roboto';
                     font-size: 1rem;
-                    font-weight: 400;                
+                    font-weight: 400;
                     color: #777777;
                     line-height: 1rem;
                 }

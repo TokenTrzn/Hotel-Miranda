@@ -247,53 +247,6 @@
   padding-bottom: 1.5rem;
 }
 
-.ultimate {
-  background-color: #333333;
-  padding: 4.6rem 1.2rem 0;
-}
-.ultimate__title {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 0.825rem;
-  line-height: 1.125rem;
-  letter-spacing: 2.8px;
-  margin-bottom: 1.5rem;
-  color: #FFFFFF;
-  margin-bottom: 1rem;
-}
-.ultimate__description {
-  font-family: "Old Standard TT", serif;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 3.75rem;
-  letter-spacing: -1.2px;
-  color: #FFFFFF;
-  margin-bottom: 3rem;
-}
-.ultimate__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.ultimate__nav__links {
-  background-color: #FFFFFF;
-  overflow: visible;
-  padding: 1rem 1.5rem;
-  display: flex;
-  flex-direction: row;
-}
-.ultimate__nav__links a:nth-child(2) {
-  color: #BEAD8E;
-}
-.ultimate__nav__links a:nth-child(1),
-.ultimate__nav__links a:nth-child(2) {
-  font-family: "Archivo";
-  font-size: 1rem;
-  font-weight: 700;
-  color: #222222;
-  text-decoration: none;
-}
-
 .rooms {
   padding: 3rem 1.2rem 0;
 }
@@ -353,36 +306,6 @@
   font-weight: 700;
   font-size: 1rem;
   line-height: 43px;
-}
-
-.ultimate {
-  background-color: #333333;
-  padding: 4.6rem 1.2rem 0;
-}
-.ultimate__title {
-  margin-bottom: 1rem;
-}
-.ultimate__description {
-  margin-bottom: 2.9rem;
-}
-.ultimate__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.ultimate__nav__links {
-  background-color: #FFFFFF;
-  overflow: visible;
-  padding: 1rem 1.5rem;
-  display: flex;
-  flex-direction: row;
-}
-.ultimate__nav__links a:nth-child(1) {
-  text-decoration: none;
-}
-.ultimate__nav__links a:nth-child(2) {
-  color: #BEAD8E;
-  text-decoration: none;
 }
 
 .roomInfo {
@@ -933,10 +856,20 @@
   line-height: 1rem;
   color: #777777;
 }
+@media only screen and (min-width: 1000px) {
+  .contact__media {
+    display: flex;
+  }
+}
 .contact__image {
   width: 100%;
   margin-top: 3rem;
   padding: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .contact {
+    padding: 0 20%;
+  }
 }
 
 .form {
@@ -948,23 +881,18 @@
   align-items: center;
   flex-direction: column;
 }
-.form__group {
+.form__item {
   position: relative;
   width: 90%;
   display: flex;
   align-items: center;
 }
-.form__icon {
+.form__item__icon {
   position: absolute;
   left: 10px;
   pointer-events: none;
 }
-.form__icon--message {
-  top: 18%;
-  position: absolute;
-  left: 10px;
-}
-.form__input {
+.form__item__input {
   color: #777;
   font-family: "Roboto";
   font-size: 16px;
@@ -992,13 +920,69 @@
   color: #ffffff;
 }
 
+.ultimate {
+  background-color: #333333;
+  padding: 4.6rem 1.2rem 0;
+}
+.ultimate__title {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 0.825rem;
+  line-height: 1.125rem;
+  letter-spacing: 2.8px;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.ultimate__description {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 1000px) {
+  .ultimate__description {
+    margin-bottom: 0;
+  }
+}
+.ultimate__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.ultimate__nav__links {
+  background-color: #FFFFFF;
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.ultimate__nav__links__text {
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #bead8e;
+}
+.ultimate__nav__links__text a {
+  color: #222222;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1000px) {
+  .ultimate {
+    padding: 4rem 20% 0;
+  }
+}
+
 .aboutUs {
   text-align: center;
 }
 .aboutUs__video {
   width: 100%;
-  padding: 0 1rem;
-  padding-top: 4rem;
+  height: auto;
 }
 .aboutUs__title {
   font-family: "Old Standard TT";
@@ -1008,6 +992,14 @@
   letter-spacing: -1.16px;
   color: #222222;
   padding: 2rem 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .aboutUs__title {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -2.16px;
+    padding: 2rem 0;
+  }
 }
 .aboutUs__icons {
   display: grid;
@@ -1028,6 +1020,11 @@
   font-size: 0.75rem;
   letter-spacing: 2.4px;
   color: #222222;
+}
+@media screen {
+  .aboutUs {
+    padding: 4rem 20% 0;
+  }
 }
 
 .restaurant {
@@ -1194,11 +1191,11 @@
   width: 100%;
 }
 
-.ultimate {
+.ultimateHome {
   background-color: #333333;
   padding: 4.6rem 1.2rem 0;
 }
-.ultimate__title {
+.ultimateHome__title {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.825rem;
@@ -1209,7 +1206,7 @@
   margin-bottom: 2.5rem;
   margin-right: 1rem;
 }
-.ultimate__description {
+.ultimateHome__description {
   font-family: "Old Standard TT", serif;
   font-size: 3.5rem;
   font-weight: 400;
@@ -1218,7 +1215,20 @@
   color: #FFFFFF;
   margin-bottom: 2rem;
 }
-.ultimate__button {
+@media only screen and (min-width: 1000px) {
+  .ultimateHome__description {
+    font-size: 7.5rem;
+    line-height: 8.125rem;
+    letter-spacing: -3.6px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .ultimateHome__media {
+    display: flex;
+    width: 53%;
+  }
+}
+.ultimateHome__button {
   width: 75%;
   border: none;
   border-radius: 0;
@@ -1231,9 +1241,19 @@
   letter-spacing: 2.8px;
   margin-bottom: 2rem;
 }
-.ultimate #learnButton {
+.ultimateHome #learnButton {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.3);
+}
+@media only screen and (min-width: 1000px) {
+  .ultimateHome #learnButton {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .ultimateHome {
+    padding: 6rem 4rem;
+  }
 }
 
 .availability {
@@ -1269,6 +1289,11 @@
   height: 1rem;
   margin-right: 0.5rem;
 }
+@media only screen and (min-width: 1000px) {
+  .availability__items {
+    margin-top: 3%;
+  }
+}
 .availability__button {
   width: 75%;
   border: none;
@@ -1281,6 +1306,19 @@
   font-size: 0.875rem;
   letter-spacing: 2.8px;
   margin: 1rem 0;
+}
+@media only screen and (min-width: 1000px) {
+  .availability__button {
+    width: 30%;
+    margin-left: 17%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .availability {
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
 }
 
 .about {
