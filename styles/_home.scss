@@ -23,7 +23,7 @@
 
     &__media {
         @media only screen and (min-width:1000px) {
-            display: flex;   
+            display: flex;
             width: 53%;
         }
     }
@@ -48,7 +48,7 @@
         border: 2px solid rgba(255, 255, 255, .3);
 
         @media only screen and (min-width: 1000px) {
-            margin-left: 2rem;   
+            margin-left: 2rem;
         }
     }
 
@@ -94,7 +94,7 @@
         }
 
         @media only screen and (min-width: 1000px) {
-                margin-top: 3%;
+            margin-top: 3%;
         }
     }
 
@@ -112,15 +112,15 @@
         margin: 1rem 0;
 
         @media only screen and (min-width: 1000px) {
-            width: 30%; 
-            margin-left: 17%;  
+            width: 30%;
+            margin-left: 17%;
         }
     }
 
     @media only screen and (min-width: 1000px) {
         display: flex;
-        align-items: center;            
-        padding: 2rem 4rem;   
+        align-items: center;
+        padding: 2rem 4rem;
     }
 }
 
@@ -537,7 +537,6 @@
     text-align: center;
     background: #222222;
     padding: 3rem 0;
-    margin-bottom: 4rem;
 
     &__item {
         padding-bottom: 3rem;
@@ -565,5 +564,11 @@
             line-height: 1.3rem;
             color: #999999;
         }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        margin: 3rem;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
