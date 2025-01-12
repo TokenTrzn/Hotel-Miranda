@@ -2,6 +2,15 @@
     background: #ffffff;
     text-align: start;
 
+    &__media {
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 80%;
+        }
+    }
+
     &__bedType {
         font-family: 'Archivo';
         font-weight: 700;
@@ -11,6 +20,10 @@
         color: #777777;
         padding-left: 1rem;
         padding-top: 2.5rem;
+
+        @media only screen and (min-width: 1000px) {
+            padding: 0;
+        }
     }
 
     &__bedTitle {

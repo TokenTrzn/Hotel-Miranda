@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="../../styles/main.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="../../scripts/menu.js" defer></script>
     <script src="../../scripts/slider.js" defer></script>
@@ -33,7 +33,8 @@
         </div>
         <nav class="header__nav hidden">
             <ul class="header__nav__list">
-                <li class="header__nav__list__item" id="first"><a href="../../pages/aboutUs/aboutUs.html">About Us</a></li>
+                <li class="header__nav__list__item" id="first"><a href="../../pages/aboutUs/aboutUs.html">About Us</a>
+                </li>
                 <li class="header__nav__list__item"><a href="../../pages/rooms/rooms.html">Rooms</a></li>
                 <li class="header__nav__list__item"><a href="../../pages/offers/offers.html">Offers</a></li>
                 <li class="header__nav__list__item"><a href="../../pages/contact/contact.html">Contact</a></li>
@@ -55,9 +56,11 @@
         </section>
 
         <section class="roomInfo">
-            <p class="roomInfo__bedType">DOUBLE BED</p>
-            <p class="roomInfo__bedTitle">Luxury Double Bed</p>
-            <p class="roomInfo__price">$345<span>/Night</span></p>
+            <div class="roomInfo__media">
+                <p class="roomInfo__bedType">DOUBLE BED</p>
+                <p class="roomInfo__bedTitle">Luxury Double Bed</p>
+                <p class="roomInfo__price">$345<span>/Night</span></p>
+            </div>
             <img class="roomInfo__img" src="../../assets/habitacion1.jpg" />
         </section>
 
@@ -66,13 +69,13 @@
             <form class="checkAvailability__form">
                 <div class="checkAvailability__form__checkIn">
                     <label class="checkAvailability__form__checkIn__title" for="chekIn">Check In</label>
-                    <input class="checkAvailability__form__checkIn__input" id="checkIn" type="date" placeholder="07/01/2025"
-                        pattern="\d{4}-\d{2}-\d{2}" />
+                    <input class="checkAvailability__form__checkIn__input" id="checkIn" type="date"
+                        placeholder="07/01/2025" pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
                 <div class="checkAvailability__form__checkOut">
                     <label class="checkAvailability__form__checkOut__title" for="checkOut">Check Out</label>
-                    <input class="checkAvailability__form__checkOut__input" id="checkOut" type="date" placeholder="09/01/2025"
-                        pattern="\d{4}-\d{2}-\d{2}" />
+                    <input class="checkAvailability__form__checkOut__input" id="checkOut" type="date"
+                        placeholder="09/01/2025" pattern="\d{4}-\d{2}-\d{2}" />
                 </div>
                 <button class="checkAvailability__form__button" type="submit">CHECK AVAILABILITY</button>
             </form>
@@ -176,29 +179,35 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
-                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons" />
                         <div class="relatedRooms__swiper__info">
                             <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
-                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur
+                                adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a
+                                    href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
-                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons" />
                         <div class="relatedRooms__swiper__info">
                             <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
-                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur
+                                adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a
+                                    href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src="../../assets/habitacion1.jpg" class="relatedRooms__swiper__img" />
-                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons"/>
+                        <img src="../../assets/row_icons.png" class="relatedRooms__swiper__icons" />
                         <div class="relatedRooms__swiper__info">
                             <p class="relatedRooms__swiper__info__title">Minimal Duplex Room</p>
-                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                            <p class="relatedRooms__swiper__info__price">$345/Night <a href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
+                            <p class="relatedRooms__swiper__info__description">Lorem ipsum dolor sit amet, consectetur
+                                adipi sicing elit, sed do eiusmod tempor.</p>
+                            <p class="relatedRooms__swiper__info__price">$345/Night <a
+                                    href="../../pages/roomsDetails/roomDetails.html">Booking Now</a></p>
                         </div>
                     </div>
                 </div>
