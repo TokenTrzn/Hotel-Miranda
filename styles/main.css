@@ -260,6 +260,7 @@
 @media only screen and (min-width: 1000px) {
   .footer__contact-us {
     flex: 1;
+    flex-direction: column;
   }
 }
 .footer__copyright {
@@ -873,6 +874,7 @@
   display: flex;
   padding: 6rem 2rem;
   position: relative;
+  flex: 1;
 }
 .contact__item__background {
   position: absolute;
@@ -911,12 +913,12 @@
 }
 .contact__image {
   width: 100%;
-  margin-top: 3rem;
-  padding: 1rem;
+  margin: 3rem 0;
+  padding: 0 10%;
 }
 @media only screen and (min-width: 1000px) {
   .contact {
-    padding: 0 20%;
+    padding: 0 10%;
   }
 }
 
@@ -931,7 +933,7 @@
 }
 .form__item {
   position: relative;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -966,6 +968,28 @@
   line-height: 1.1rem;
   letter-spacing: 3.2px;
   color: #ffffff;
+}
+@media only screen and (min-width: 1000px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 25%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #messageInput {
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #formButton {
+    grid-column: span 2;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .ultimate {

@@ -6,6 +6,7 @@
         display: flex;
         padding: 6rem 2rem;
         position: relative;
+        flex: 1;
 
         &__background {
             position: absolute;
@@ -51,12 +52,12 @@
 
     &__image {
         width: 100%;
-        margin-top: 3rem;
-        padding: 1rem;
+        margin: 3rem 0;
+        padding: 0 10%;
     }
 
     @media only screen and (min-width: 1000px) {
-        padding: 0 20%;
+        padding: 0 10%;
     }
 }
 
@@ -71,7 +72,7 @@
 
     &__item {
         position: relative;
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
 
@@ -109,5 +110,26 @@
         line-height: 1.1rem;
         letter-spacing: 3.2px;
         color: #ffffff;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 25%;
+    }
+}
+
+#messageInput {
+    @media only screen and (min-width: 1000px) {
+        grid-column: span 2;
+        width: 100%;
+    }
+}
+
+#formButton {
+    @media only screen and (min-width: 1000px) {
+        grid-column: span 2;
+        width: 50%;
+        margin: 0 auto;
     }
 }
