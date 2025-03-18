@@ -634,7 +634,13 @@
 
         @media only screen and (min-width: 1000px) {
             display: block;
+            position: absolute;
+            margin-left: 2rem;
         }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        height: 16rem;
     }
 }
 
@@ -698,12 +704,15 @@
         }
 
         #last {
-            padding-bottom: 5rem;
+            padding-bottom: 0;
         }
 
         .swiper-button-next::after,
         .swiper-button-prev::after {
             margin-bottom: -22rem;
+            @media only screen and (min-width: 1000px) {
+                display: none;
+            }
         }
 
         .swiper-button-next::after {
@@ -724,6 +733,35 @@
                 width: 100%;
             }
         }
+    }
+
+    .swiper2 {
+        @media only screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__desktop {
+        display: none;
+
+        &__item {            
+            flex: 1;
+
+            &__image {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            margin: 4rem 0;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        margin: -4rem 20%;
     }
 }
 
