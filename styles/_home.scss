@@ -121,6 +121,7 @@
         display: flex;
         align-items: center;
         padding: 2rem 4rem;
+        margin-bottom: 6rem;
     }
 }
 
@@ -267,6 +268,7 @@
     @media only screen and (min-width: 1000px) {
         display: flex;
         flex-direction: row-reverse;
+        margin-bottom: 8rem;
     }
 }
 
@@ -291,6 +293,10 @@
         letter-spacing: -1.2px;
         color: #222222;
         padding-bottom: 2rem;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__swiper {
@@ -299,12 +305,22 @@
         &__img {
             width: 100%;
             padding: 1rem 0;
+
+            @media only screen and (min-width: 1000px) {
+                width: 50%;
+            }
         }
 
         &__icons {
             position: absolute;
             right: 10%;
             bottom: 24.8rem;
+
+            @media only screen and (min-width: 1000px) {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         &__info {
@@ -313,11 +329,17 @@
             text-align: center;
 
             &__title {
-                @include roomTitle
+                @include roomTitle;
+                @media only screen and (min-width: 1000px) {
+                    margin-bottom: 1rem;
+                }
             }
 
             &__description {
-                @include roomDescription
+                @include roomDescription;
+                @media only screen and (min-width: 1000px) {
+                    width: 75%;
+                }
             }
 
             &__price {
@@ -336,15 +358,50 @@
                     text-decoration: none;
                     color: #BDBDBD;
                 }
+
+                @media only screen and (min-width: 1000px) {
+                    align-items: center;
+                    font-size: 2rem;
+                    padding: 0;
+                }
+            }
+
+            .desktop-room-desc {
+                @media only screen and (min-width: 1000px) {
+                    width: 60%;
+                }
+            }
+
+            @media only screen and (min-width: 1000px) {
+                position: absolute;
+                bottom: -1rem;
+                display: flex;
+                text-align: justify;
+                padding: 1rem 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40%;
+                z-index: 10;
+                justify-content: space-between;
             }
         }
 
         .swiper-button-next::after {
             margin-right: 2rem;
+
+            @media only screen and (min-width: 1000px) {
+                margin: 0 40rem 0 1rem;
+                background: #BDAC8D;
+            }
         }
 
         .swiper-button-prev::after {
             margin-left: 2rem;
+
+            @media only screen and (min-width: 1000px) {
+                margin: 0 1rem 0 40rem;
+                background: #BDAC8D;
+            }
         }
     }
 }
@@ -392,6 +449,10 @@
     &__button {
         @include defaultButton;
         margin-bottom: 2rem;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        margin-top: 4rem;
     }
 }
 
