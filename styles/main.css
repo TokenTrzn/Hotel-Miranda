@@ -1840,9 +1840,23 @@
   margin-top: 16px;
   margin-right: 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .introVideo__description {
+    margin-bottom: 2rem;
+  }
+}
 .introVideo__video {
   width: 100%;
   padding: 2rem 0;
+}
+@media only screen and (min-width: 1000px) {
+  .introVideo__video {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    right: 20%;
+    top: 290%;
+  }
 }
 .introVideo__button {
   width: 75%;
@@ -1859,8 +1873,15 @@
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 1000px) {
+  .introVideo .video-desktop-info {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1000px) {
   .introVideo {
-    margin-top: 4rem;
+    margin: 8rem 0;
+    padding: 8rem;
+    background: linear-gradient(to right, #000 70%, #BEAD8E 70%);
   }
 }
 

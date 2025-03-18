@@ -439,11 +439,23 @@
         vertical-align: top;
         margin-top: 16px;
         margin-right: 20px;
+
+        @media only screen and (min-width: 1000px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__video {
         width: 100%;
         padding: 2rem 0;
+
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            width: 30%;
+            height: 60%;
+            right: 20%;
+            top: 290%;
+        }
     }
 
     &__button {
@@ -451,8 +463,16 @@
         margin-bottom: 2rem;
     }
 
+    .video-desktop-info {
+        @media only screen and (min-width: 1000px) {
+            width: 30%;
+        }
+    }
+
     @media only screen and (min-width: 1000px) {
-        margin-top: 4rem;
+        margin: 8rem 0;
+        padding: 8rem;
+        background: linear-gradient(to right, #000 70%, #BEAD8E 70%);
     }
 }
 
