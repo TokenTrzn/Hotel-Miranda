@@ -253,22 +253,22 @@
         }
     }
 
-    .left {
-        display: flex;
-        flex: 1;
-    }
-
-    .right {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     @media only screen and (min-width: 1000px) {
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 8rem;
+
+        .left {
+            display: flex;
+            flex: 1;
+        }
+    
+        .right {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
 
@@ -330,6 +330,7 @@
 
             &__title {
                 @include roomTitle;
+
                 @media only screen and (min-width: 1000px) {
                     margin-bottom: 1rem;
                 }
@@ -337,6 +338,7 @@
 
             &__description {
                 @include roomDescription;
+
                 @media only screen and (min-width: 1000px) {
                     width: 75%;
                 }
@@ -472,7 +474,7 @@
     @media only screen and (min-width: 1000px) {
         margin: 8rem 0;
         padding: 8rem;
-        background: linear-gradient(to right, #000 70%, #BEAD8E 70%);
+        background: linear-gradient(to right, #222222 70%, #BEAD8E 70%);
     }
 }
 
@@ -480,6 +482,10 @@
     background: #ffffff;
     padding: 1rem;
     text-align: center;
+
+    &__desktop {
+        display: none;
+    }
 
     &__title {
         font-family: 'Archivo';
@@ -546,8 +552,64 @@
                 padding-right: 2rem;
             }
         }
+    }
 
+    @media only screen and (min-width: 1000px) {
+        &__swiper {
+            display: none !important;
+        }
 
+        &__desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 2rem;
+            width: 100%;
+            padding: 1rem 20%;
+            text-align: start;
+
+            &__item {
+                position: relative;
+                background: #ffffff;
+                padding: 1rem;
+                margin-bottom: 3rem;
+
+                &__background {
+                    position: absolute;
+                    color: #222222;
+                    opacity: 4%;
+                    font-family: 'Archivo';
+                    font-size: 7.5rem;
+                    font-weight: 700;
+                    line-height: 8.125rem;
+                    right: 5%;
+                    top: 0;
+                }
+
+                &__icon {
+                    padding: 3rem 1rem;
+                }
+
+                &__title {
+                    font-family: 'Old Standard TT';
+                    font-size: 1.875rem;
+                    font-weight: 400;
+                    line-height: 1.875rem;
+                    letter-spacing: -0.9px;
+                    color: #222222;
+                    padding-bottom: 2rem;
+                }
+
+                &__text {
+                    font-family: 'Archivo';
+                    font-size: .875rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    color: #777777;
+                    padding-right: 2rem;
+                }
+            }
+        }
     }
 }
 
@@ -561,6 +623,18 @@
         transform: scale(.5);
         right: -20%;
         top: -20%;
+
+        @media only screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__icon-desktop {
+        display: none;
+
+        @media only screen and (min-width: 1000px) {
+            display: block;
+        }
     }
 }
 

@@ -1648,21 +1648,21 @@
     width: 80%;
   }
 }
-.about .left {
-  display: flex;
-  flex: 1;
-}
-.about .right {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-}
 @media only screen and (min-width: 1000px) {
   .about {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 8rem;
+  }
+  .about .left {
+    display: flex;
+    flex: 1;
+  }
+  .about .right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -1881,7 +1881,7 @@
   .introVideo {
     margin: 8rem 0;
     padding: 8rem;
-    background: linear-gradient(to right, #000 70%, #BEAD8E 70%);
+    background: linear-gradient(to right, #222222 70%, #BEAD8E 70%);
   }
 }
 
@@ -1889,6 +1889,9 @@
   background: #ffffff;
   padding: 1rem;
   text-align: center;
+}
+.facilitiesHome__desktop {
+  display: none;
 }
 .facilitiesHome__title {
   font-family: "Archivo";
@@ -1949,6 +1952,57 @@
   color: #777777;
   padding-right: 2rem;
 }
+@media only screen and (min-width: 1000px) {
+  .facilitiesHome__swiper {
+    display: none !important;
+  }
+  .facilitiesHome__desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 20%;
+    text-align: start;
+  }
+  .facilitiesHome__desktop__item {
+    position: relative;
+    background: #ffffff;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+  .facilitiesHome__desktop__item__background {
+    position: absolute;
+    color: #222222;
+    opacity: 4%;
+    font-family: "Archivo";
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 8.125rem;
+    right: 5%;
+    top: 0;
+  }
+  .facilitiesHome__desktop__item__icon {
+    padding: 3rem 1rem;
+  }
+  .facilitiesHome__desktop__item__title {
+    font-family: "Old Standard TT";
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    color: #222222;
+    padding-bottom: 2rem;
+  }
+  .facilitiesHome__desktop__item__text {
+    font-family: "Archivo";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #777777;
+    padding-right: 2rem;
+  }
+}
 
 .banner {
   position: relative;
@@ -1960,6 +2014,19 @@
   transform: scale(0.5);
   right: -20%;
   top: -20%;
+}
+@media only screen and (min-width: 1000px) {
+  .banner__icon {
+    display: none;
+  }
+}
+.banner__icon-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .banner__icon-desktop {
+    display: block;
+  }
 }
 
 .menu {
