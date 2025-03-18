@@ -1608,7 +1608,7 @@
   .about__strongTeam {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: space-between;
   }
 }
 .about__luxuryRoom {
@@ -1811,6 +1811,7 @@
 .introVideo {
   padding: 1rem;
   background: #222222;
+  position: relative;
 }
 .introVideo__title {
   font-family: "Archivo";
@@ -1819,6 +1820,7 @@
   line-height: 18px;
   letter-spacing: 2.8px;
   color: #BDAC8D;
+  margin-top: 2rem;
 }
 .introVideo__subtitle {
   font-family: "Old Standard TT";
@@ -1855,7 +1857,7 @@
     width: 30%;
     height: 60%;
     right: 20%;
-    top: 290%;
+    top: 20%;
   }
 }
 .introVideo__button {
@@ -1874,7 +1876,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .introVideo .video-desktop-info {
-    width: 30%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1000px) {

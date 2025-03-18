@@ -208,7 +208,7 @@
         @media only screen and (min-width: 1000px) {
             display: flex;
             flex-direction: column-reverse;
-            justify-content: start;
+            justify-content: space-between;
         }
     }
 
@@ -411,6 +411,7 @@
 .introVideo {
     padding: 1rem;
     background: #222222;
+    position: relative;
 
     &__title {
         font-family: "Archivo";
@@ -419,6 +420,7 @@
         line-height: 18px;
         letter-spacing: 2.8px;
         color: #BDAC8D;
+        margin-top: 2rem;
     }
 
     &__subtitle {
@@ -456,7 +458,7 @@
             width: 30%;
             height: 60%;
             right: 20%;
-            top: 290%;
+            top: 20%;
         }
     }
 
@@ -467,7 +469,7 @@
 
     .video-desktop-info {
         @media only screen and (min-width: 1000px) {
-            width: 30%;
+            width: 40%;
         }
     }
 
