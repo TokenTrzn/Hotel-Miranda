@@ -1277,6 +1277,9 @@
   padding: 1rem;
   text-align: center;
 }
+.facilities__desktop {
+  display: none;
+}
 .facilities__title {
   font-family: "Archivo";
   font-size: 0.875rem;
@@ -1335,6 +1338,57 @@
   color: #ffffff;
   padding-right: 2rem;
   padding-bottom: 3rem;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities__swiper {
+    display: none !important;
+  }
+  .facilities__desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 20%;
+    text-align: start;
+  }
+  .facilities__desktop__item {
+    position: relative;
+    background: #292929;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+  .facilities__desktop__item__background {
+    position: absolute;
+    color: #222222;
+    opacity: 4%;
+    font-family: "Archivo";
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 8.125rem;
+    right: 5%;
+    top: 0;
+  }
+  .facilities__desktop__item__icon {
+    padding: 3rem 1rem;
+  }
+  .facilities__desktop__item__title {
+    font-family: "Old Standard TT";
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    color: #ffffff;
+    padding-bottom: 2rem;
+  }
+  .facilities__desktop__item__text {
+    font-family: "Archivo";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #ffffff;
+    padding-right: 2rem;
+  }
 }
 
 .counter {

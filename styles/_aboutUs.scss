@@ -13,7 +13,7 @@
         @include ultimateDescription;
         margin-bottom: 3rem;
 
-        @media only screen and (min-width: 1000px)  {
+        @media only screen and (min-width: 1000px) {
             margin-bottom: 0;
         }
     }
@@ -41,7 +41,7 @@
                     color: #222222;
                     text-decoration: none;
                 }
-            }          
+            }
         }
     }
 
@@ -151,6 +151,10 @@
     padding: 1rem;
     text-align: center;
 
+    &__desktop {
+        display: none;
+    }
+
     &__title {
         font-family: 'Archivo';
         font-size: .875rem;
@@ -214,6 +218,64 @@
                 color: #ffffff;
                 padding-right: 2rem;
                 padding-bottom: 3rem;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__swiper {
+            display: none !important;
+        }
+
+        &__desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 2rem;
+            width: 100%;
+            padding: 1rem 20%;
+            text-align: start;
+
+            &__item {
+                position: relative;
+                background: #292929;
+                padding: 1rem;
+                margin-bottom: 3rem;
+
+                &__background {
+                    position: absolute;
+                    color: #222222;
+                    opacity: 4%;
+                    font-family: 'Archivo';
+                    font-size: 7.5rem;
+                    font-weight: 700;
+                    line-height: 8.125rem;
+                    right: 5%;
+                    top: 0;
+                }
+
+                &__icon {
+                    padding: 3rem 1rem;
+                }
+
+                &__title {
+                    font-family: 'Old Standard TT';
+                    font-size: 1.875rem;
+                    font-weight: 400;
+                    line-height: 1.875rem;
+                    letter-spacing: -0.9px;
+                    color: #ffffff;
+                    padding-bottom: 2rem;
+                }
+
+                &__text {
+                    font-family: 'Archivo';
+                    font-size: .875rem;
+                    font-weight: 400;
+                    line-height: 1.5rem;
+                    color: #ffffff;
+                    padding-right: 2rem;
+                }
             }
         }
     }
